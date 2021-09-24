@@ -1,0 +1,177 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* color definitions */
+:root {
+  --aquablue: #16bdca;
+  --darkblue: #151e2e;
+  --white: #ffffff;
+  --grey: #e9eef3;
+  --darkergrey: #a2aeb9;
+
+
+}
+
+/* base font styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  background: var(--darkblue);
+}
+
+.heading {
+  text-align: center;
+  justify-content: center;
+  padding: 40px;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.heading h1 {
+  margin: 0;
+}
+
+.heading p {
+  margin: 15px;
+}
+
+.container {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+
+  width: 270px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: var(--grey);
+  margin-top: 20px;
+
+}
+
+.card-top {
+  color: black;
+  background-color: white;
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.card-bottom {
+  justify-content: center;
+ 
+
+}
+
+
+.card p {
+  padding: 10px;
+}
+
+.card a {
+  padding: 15px 15px;
+  display: block;
+  text-align: center;
+  margin: 15px 15px;
+  border-radius: 10px;
+  text-align: center;
+  
+}
+
+
+
+/*
+.card:hover {
+  background-color: rgb(62, 62, 62);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+}
+*/
+
+ul{
+  font-weight: bold;
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+ul li:before {
+  content: '✓';
+  color: var(--aquablue);
+  font-weight: bold;
+}
+
+.link2 {
+  background-color: var(--aquablue);
+  color: var(--white);
+  text-decoration: none;
+  box-shadow: 0px 5px 5px grey;
+  
+}
+
+.link3{
+  color: var(--aquablue);
+  background-color: var(--white);
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+h1 span {
+  font-size: 20px;
+  color: var(--darkergrey);
+}
+
+
+.card-2{
+  border-style: solid;
+  border-color: var(--aquablue);
+  
+
+}
+
+.parent:hover {
+  transform: scale(1.2)
+}
+
+.parent{
+  position: relative;
+  transition: transform .2s;
+  justify-content: center;
+}
+
+
+
+.child1{
+  position: absolute;
+  left: 16%;
+  right: 50%;
+  top: 0px;
+  text-align: center;
+ 
+}
+
+.child1 p {
+  font-size: 15px;
+  background-color: var(--aquablue);
+  border-radius: 30px;
+  padding-left: 50px;
+  padding-right: 60px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  color: #fff;
+  text-align: center;
+  display: inline-flex;
+  white-space: nowrap;
+}
